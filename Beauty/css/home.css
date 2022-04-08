@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*prevents many errors from happing when changing padding in most of the selectors"important"*/
+}
+img {
+  padding: 0 0 50px 0;
+  color: linear-gradient(rgba(0, 0, 0, 0.966), rgba(0, 0, 0, 0.973));
+}
+
+body {
+  /*background: black;*/
+  background: linear-gradient(
+    rgba(66, 68, 70, 0.849),
+    rgba(102, 72, 72, 0.788)
+  );
+  color: white;
+  /* font-family: "Tangerine", serif;
+  font-size: 50px;*/
+}
+.logo {
+  width: 50px;
+  height: 100px;
+}
+
+.name {
+  text-align: center;
+  top: 1px;
+  left: 10px;
+  font-size: 300%;
+  background: linear-gradient(
+    rgba(66, 68, 70, 0.849),
+    rgba(102, 72, 72, 0.788)
+  );
+  font-family: "Tangerine", serif;
+}
+.m {
+  background: linear-gradient(rgb(199, 176, 176), rgb(54, 54, 133));
+}
+.b {
+  color: rgba(227, 211, 230, 0.746);
+
+  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;*/
+}
+ul,
+li {
+  /*font-size: 15px;*/
+  list-style-type: none;
+}
+ul,
+/*a {
+  text-decoration: none;
+  display: block;
+  /*padding: 10px 10px;*/
+  /* display: flex;*/
+  /*justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  color: rgb(182, 182, 216);
+  font-size: 220%;
+  font-family: italic;
+}*/
+.Items {
+  display: block;
+  text-decoration: none;
+  /*font-size: 1.8rem;*/
+  color: white;
+  margin: 2rem 4rem;
+  font-family: "Tangerine", serif;
+  font-size: 50px;
+  padding: 0 0 0 10%;
+}
+.Items:hover {
+  color: rgb(80, 20, 0);
+}
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  background: rgb(158, 108, 108);
+  cursor: pointer;
+  border-radius: 20%;
+}
+/*.closeIcon {
+  display: none;
+}*/
+.Nav {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgb(199, 180, 180);
+  color: white;
+  list-style-type: none;
+  padding-top: 4rem;
+}
+.showMenu {
+  transform: translateY(0);
+}
+
+/*div {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 14px 14px 20px #cdced1, -14px -14px 20px white;
+  border-radius: 20px;
+}
+/*.location {
+  box-shadow: 14px 14px 20px #cdced1, -14px -14px 20px white;
+  padding: 30px 50px 60px 50px;
+  margin: 40px 50px 0 0 ;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-radius:20px ;
+}*/
+.textimage {
+  background: linear-gradient(rgba(0, 0, 0, 0.966));
+  position: relative;
+  margin: 5%;
+}
+
+/*textin image*/
+.text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  bottom: 50%;
+  text-align: center;
+  color: rgb(247, 239, 239);
+  font-size: 25px;
+  transform: translate(-50%);
+  height: 100%;
+}
+.location {
+  box-shadow: 14px 14px 20px #04175057,
+    -14px -14px 20px rgba(214, 211, 211, 0.301);
+
+  display: flex;
+}
+.locate {
+  padding: 30px 50px 30px 50px;
+  width: 40%;
+  margin-top: 10px;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.contact {
+  /*box-shadow: 14px 14px 20px #cdced1, -14px -14px 20px white;*/
+  padding: 30px 50px 30px 50px;
+
+  justify-content: center;
+  width: 50%;
+  float: right;
+
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 20px;
+}
+button {
+  font-size: 20px;
+  font-style: italic;
+}
+button:hover {
+  cursor: pointer;
+  color: rgb(0, 118, 221);
+}
+.fa-facebook {
+  color: white;
+  background: rgba(57, 57, 211, 0.637);
+  border-radius: 10px;
+}
+.fa-twitter {
+  color: white;
+  background: purple;
+  border-radius: 10px;
+}
+.fa-instagram {
+  background: rgb(240, 192, 116);
+  color: white;
+  border-radius: 10px;
+}
+.fa-telegram {
+  background: rgb(43, 43, 180);
+  color: white;
+  border-radius: 10px;
+}
+.fa-whatsapp {
+  background: rgb(17, 245, 17);
+  color: white;
+  border-radius: 10px;
+}
+.back {
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+input {
+  border-radius: 10px;
+  padding: 10px;
+}
+textarea {
+  border-radius: 10px;
+  padding: 10px;
+}
+#preloader {
+  background: #000 url("../Image/images.gif") no-repeat center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
